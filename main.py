@@ -35,29 +35,64 @@ def brincar_de_plim(fim):
         else:
             print('{:0>3}'.format(numero))
 
+
+
 if __name__ == '__main__':
-    print_hi('Tati')
 
-#Chamar a função de calculo da area do retangulo
-resultado = calcular_area_do_retangulo(3,4)
-print(f'A area do retangulo e de {resultado} m²')
 
-#Chamar a função de calculo da area do quadrado
-resultado = calcular_area_do_quadrado(5)
-print(f'A área do quadrado é de {resultado} m²')
+    resposta = 'C'
 
-#Chamar a função de calculo da area do trinagulo
-resultado = calcular_area_do_triangulo(6,7)
-print(f'A área do triângulo é de {resultado} m²')
+    while resposta.upper() != 'Z':
+        print('######################################################')
+        print('#                                                    #')
+        print('#        M E N U   D E   O P Ç Õ E S                 #')
+        print('#                                                    #')
+        print('#   1 - Olá Mundo                                    #')
+        print('#   2 - Área do Retângulo                            #')
+        print('#   3 - Área do Quadrado                             #')
+        print('#   4 - Área do Triângulo                            #')
+        print('#   5 - Contagem Progressiva                         #')
+        print('#   6 - Apoiar Candidato                             #')
+        print('#   7 - Brincar de Plim                              #')
+        print('#                                                    #')
+        print('#   Z - Sair                                         #')
+        print('#                                                    #')
+        print('######################################################')
 
-#Executar uma chamada progressiva
-contagem_progressiva(11)
+        resposta = input('Escolha sua opção')
+        print(f'A sua escolha foi: {resposta}')
 
-#Exibir o nome do candidato várias vezes
-apoiar_candidato('Amoedo',100)
+        if resposta.upper() != 'Z':
+            if resposta == '1':
+                print_hi('Tatiane')
+            elif resposta == '2':
+                resultado = calcular_area_do_retangulo(8,7)
+                print(f'A área do retangulo é de {resultado} m²')
+            elif resposta == '3':
+                resultado = calcular_area_do_quadrado(2)
+                print(f'A área do quadrado é de {resultado} m²')
+            elif resposta == '4':
+                resultado = calcular_area_do_triangulo(3,7)
+                print(f'A área do triangulo é de {resultado} m²')
+            elif resposta == '5':
+                contagem_progressiva(5)
+            elif resposta == '6':
+                apoiar_candidato('Fake',5)
+            elif resposta == '7':
+                brincar_de_plim(5)
+            else:
+                print('Você escolheu uma opção inválida. Escolha uma opção de 1 a 7')
+        else:
+            print('Você escolheu sair, Volte sempre!')
 
-#Brincar de PLIM
-brincar_de_plim(100)
+
+
+
+
+
+
+
+
 
 
 
